@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Recipe Finder</h1>
+        </div>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="login">
+            <a class="login-btn secondary-btn" href="#">Login</a>
+          </div>
+        </ul>
+
+        <ul class="navbar-mobile">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="login">
+            <a class="login-btn secondary-btn" href="#">Login</a>
+          </div>
+        </ul>
+
+        <i class="fa-solid fa-2xl fa-bars menu-toggle menu-open"></i>
+        <i
+          class="fa-solid fa-2xl fa-xmark menu-toggle menu-close"
+          style="display: none"
+        ></i>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-txt">
+            <h2 class="hero-h2">Discover delicious recipes</h2>
+            <h3 class="hero-h3">Find recipes that fit your diet easily!</h3>
+            <form action="">
+              <input
+                type="text"
+                id="search-input"
+                name="search-input"
+                placeholder="search for a recipe..."
+              />
+              <input
+                class="primary-btn"
+                type="button"
+                value="Search"
+                id="submit-btn"
+                name="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about">
+        <div class="container">
+          <div class="section-txt">
+            <h4 class="section-title">Discover Your Recipe</h4>
+            <h2 class="section-subtitle">Personalized recipes for everyone</h2>
+            <p class="section-txt">
+              At Recipe Finder, we empower you to explore a world of culinary
+              delights tailored specifically to your dietary needs. Whether
+              you're vegan, gluten-free, or following any specific diet, our
+              platform is designed to help you find delicious recipes that fit
+              your lifestyle. With a user-friendly interface and a diverse range
+              of options, cooking has never been easier or more enjoyable. Join
+              our community of food lovers and start your culinary adventure
+              today!
+            </p>
+            <a href="#">Get in touch</a>
+          </div>
+          <div class="about-img">
+            <img src="assets/about-side.png" alt="" />
+          </div>
+          <div class="about-img-mobile">
+            <img src="assets/about-side-mobile.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- personalized -->
+      <section class="personalized">
+        <div class="container">
+          <div class="section-txt">
+            <h4 class="section-title">Personalized Recipes</h4>
+            <h2 class="section-subtitle">Find meals for every dietary need</h2>
+          </div>
+
+          <div class="section-cards">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/card-1.png" alt="" />
+              </div>
+              <div class="card-title">
+                <h4>Personalized Search</h4>
+              </div>
+              <div class="card-desc">
+                Get recipes tailored to your unique dietary needs
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/card-2.png" alt="" />
+              </div>
+              <div class="card-title">
+                <h4>Ingredient-based search</h4>
+              </div>
+              <div class="card-desc">
+                Find recipe based on ingredients you have at home
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/card-3.png" alt="" />
+              </div>
+              <div class="card-title">
+                <h4>Nutritional information</h4>
+              </div>
+              <div class="card-desc">
+                Access to detailed nutritional info for your recipes
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
