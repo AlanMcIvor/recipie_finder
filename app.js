@@ -10,3 +10,15 @@ function toggleMenu() {
 
 openBtn.addEventListener("click", toggleMenu);
 closeBtn.addEventListener("click", toggleMenu);
+
+window.addEventListener("scroll", function () {
+  const elements = document.querySelectorAll(".slide-up");
+  const windowHeight = window.innerHeight;
+
+  elements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100) {
+      element.classList.add("visible");
+    }
+  });
+});
