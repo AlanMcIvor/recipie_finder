@@ -2,6 +2,7 @@ const menu = document.querySelector(".navbar-mobile");
 const openBtn = document.querySelector(".menu-open");
 const closeBtn = document.querySelector(".menu-close");
 
+// toggle mobile menu
 function toggleMenu() {
   const isOpen = menu.classList.toggle("show-hide");
   openBtn.style.display = isOpen ? "none" : "inline-block";
@@ -11,6 +12,7 @@ function toggleMenu() {
 openBtn.addEventListener("click", toggleMenu);
 closeBtn.addEventListener("click", toggleMenu);
 
+// text slide in effect
 window.addEventListener("scroll", function () {
   const elements = document.querySelectorAll(".slide-up");
   const windowHeight = window.innerHeight;

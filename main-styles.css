@@ -213,7 +213,6 @@ nav {
   max-width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin: auto;
   min-height: 90dvh;
   color: var(--white);
@@ -228,10 +227,21 @@ nav {
   font-weight: 400;
 }
 
+.hero-btns {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-btns .login-btn {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
 /* search function */
 input[type="text"],
 input[type="email"],
 input[type="button"],
+input[type="password"],
 textarea {
   padding: var(--btn-padding);
   font-size: 1.2em;
@@ -519,85 +529,32 @@ footer {
   font-size: 1.2em;
 }
 
-/* search results page */
+/* register */
 
-.hero,
-.hero-search {
-  background: url("assets/hero-search.png") center/cover no-repeat;
-  color: var(--white);
-  text-align: center;
-}
-
-.search-txt {
-  z-index: 99;
-  margin-top: 4em;
-}
-
-.search-txt h2 {
-  font-size: var(--h1);
-}
-
-.search-txt p {
-  font-size: var(--p);
-}
-
-/* top rated */
-
-.section-txt .checked {
-  margin-right: 10px;
-}
-
-.top-rated .container {
-  flex-direction: column;
-}
-
-.rated-card-container {
+.register-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
-  margin-block: 2em;
+  grid-template-columns: 1fr 1fr;
 }
 
-.rated-title {
-  color: var(--dark);
-}
-
-.rated-img {
-  max-width: 250px;
-}
-
-.rated-img img {
-  width: 100%;
-  height: auto;
-}
-
-.allergens {
+.register-form-container form {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
   color: var(--dark);
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.checked {
-  color: orange;
+.register-btn {
+  margin-top: 1em;
+  width: 100%;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 841px) {
-  .rated-card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .rated-card-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .section-txt .checked {
-    margin-right: 2px;
-  }
+.register-side-img img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* animations */
